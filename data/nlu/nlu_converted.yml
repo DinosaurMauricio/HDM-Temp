@@ -95,6 +95,8 @@ nlu:
     - need [large](pizza_size) [pepperoni](pizza_type)  pizza
     - want [medium](pizza_size) [onions](pizza_type)  pizza
     - want [large](pizza_size) [pepper](pizza_type) pizza
+
+
     - I want [two](pizza_amount) [small](pizza_size) [Funghi](pizza_type) pizza
     - I want [one](pizza_amount) [Funghi](pizza_type) [small](pizza_size) pizza
     - I want [Funghi](pizza_type) pizza
@@ -193,6 +195,12 @@ nlu:
     - correct
     - Yes
     - Yeah
+- intent: affirm_sliced
+  examples: |
+    - yes
+    - yeah
+    - ok
+    - va bene
 - intent: response_name_phone
   examples: |
     - my name is [Raymond](client_name) and number is [098765432](phone_number).
@@ -230,6 +238,10 @@ nlu:
   examples: |
     - [hawaii](pizza_type)
     - [margherita](pizza_type)
+- intent: pizza_crust
+  examples: | 
+    - I want [thin](pizza_crust) crust
+    - I would love a [cracker](pizza_crust) crust
 - intent: item_size
   examples: |
     - [small](pizza_size)
